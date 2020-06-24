@@ -27,8 +27,10 @@ public class AccountTester {
         /* modify the code to store 5 accounts in array and print balance and monthly Interest for the available balance */
         
         Account a=new Account(bal,user);
-       
-        System.out.println("The balance is: "+a.balance);  
+        
+        
+        System.out.println("The balance is: "+a.balance());  
         System.out.println("The InterestRate per month is "+a.interestRate);
+        System.out.println(a.validateAmount(bal));
     }
 }
